@@ -1,0 +1,143 @@
+@media screen and (min-width: 428px) {
+    .container{
+        max-width: 428px;
+        
+    }
+
+     /* ---------------------------------SECTION PROGRAM-----------------------------*/
+    .program-icon-container{
+        display: none;
+    }
+    /* -------------------------------SECTION ІNSTRUCTION--------------------------------*/
+    .instruction{
+        display: none;
+    }
+    /* -------------------------------SECTION TEAM--------------------------*/
+    .team> .container{
+        padding: 0 82px;
+    }
+
+}
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 768px;
+    }
+    /*--------------------- HERO-------------------------------------*/
+    .hero-title{
+        width: 496px;
+        height: 120px;
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 36px;
+
+    }
+
+    /* -------------------SECTION PROGRAM-------------------------------*/
+    .program-icon-container{
+        display: none;
+    }
+    .program-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+        
+      }
+    .program-item{
+        width: calc((100% - 24px) / 2);
+        height: 120px;
+        margin-bottom: 0;
+    }
+    .program-title{
+        text-align: start;
+        margin-bottom: 8px;
+    }
+    .program-text{
+        width: 356px;
+        height: 72px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    /* ---------------------SECTION ІNSTRUCTION--------------------------*/
+
+    /* --------------------SECTION TEAM------------------------------------*/
+    .team> .container{
+        padding: 0 108px;
+    }
+    .team-list{
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+}
+
+
+
+@media screen and (min-width: 1158px) {
+    .container{
+        max-width: 1158px;
+    }
+    /*---------------------------- HERO-----------------------------*/
+    .hero{
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+    .hero-title{
+        width: 496px;
+        height: 120px;
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 48px;
+    }
+    
+  }      
+
+    /* -------------------------------------------------------SECTION PROGRAM--------------------------------------------------------*/
+    .program-icon-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+    .program{
+        padding: 120px 0;
+    }
+    .program-title{
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .program-item{
+        width: calc((100% - 72px) / 4); 
+        
+    }
+    .program-text{
+        font-weight: 400;
+        font-size: 16px;
+        width: 264px;
+        height: 72px;
+    }
+    /* -------------------------------------------------------SECTION ІNSTRUCTION--------------------------------------------------------*/
+
+    .instruction{
+        display: flex;
+        padding: 120px 0;
+    }
+    /* -------------------------------------------------------SECTION TEAM--------------------------------------------------------*/
+    .team{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .team> .container{
+        padding: 0 15px;
+    }
+    
+    .team-list {
+        display: flex;
+        gap: 24px;
+}
+    .team-item{
+        width: calc((100% - 72px) / 4);
+}

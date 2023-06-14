@@ -37,7 +37,7 @@ img {
 }
 /*------------------------------------------------------- службові класи---------------------------------------------- */
 .container {
-  width: 1158px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -182,8 +182,8 @@ img {
 
 /*------------------------------------------------ HERO--------------------------------------------------------*/
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -198,15 +198,15 @@ img {
 }
 
 .hero-title {
-  max-width: 496px;
+  width: 320px;
+  height: 80px;
   margin: 0 auto;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .hero-btn {
@@ -231,7 +231,7 @@ img {
 
 /* -------------------------------------------------------SECTION PROGRAM--------------------------------------------------------*/
 .program {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .program-top-title {
   font-size: 36px;
@@ -241,19 +241,33 @@ img {
 }
 
 .program-title {
+  font-size: 36px;
   margin-bottom: 8px;
+  font-weight: 700;
+  line-height: 1.11;
+  text-align: center;
+  
 }
 .program-item {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
+  
+  margin-bottom: 72px;
+  
+}
+.program-item:last-child{
+  margin-bottom: 0;
 }
 .program-list {
   display: flex;
   align-items: center;
   gap: 24px;
+  flex-wrap: wrap;
+  
 }
 .program-text {
-  width: 264px;
-  height: 72px;
+  font-weight: 500;
+  width: 396px;
+  
 }
 .program-icon-container {
   display: flex;
@@ -312,8 +326,8 @@ img {
 /* -------------------------------------------------------SECTION TEAM--------------------------------------------------------*/
 .team {
   background: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .team-title {
@@ -326,10 +340,11 @@ img {
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  row-gap: 72px;
+  flex-wrap: wrap;
 }
 .team-item {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
