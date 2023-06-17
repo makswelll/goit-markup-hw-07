@@ -22,6 +22,93 @@
     .container{
         max-width: 768px;
     }
+
+    /* --------------------------------------------HEADER ----------------------------------------------------*/
+    .header-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 24px 0;
+      }
+      .header-contact {
+        display: flex;
+        margin-left: auto;
+        gap: 40px;
+      }
+      .header-logo {
+        margin-right: 76px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
+      }
+      
+      .header-logo-color {
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: #2e2f42;
+      }
+      
+      .header-list .header-link:hover,
+      .header-list .header-link:focus,
+      .header-link.current {
+        color: var(--primare-hover-color);
+      }
+      
+      .header-link {
+        position: relative;
+        padding: 24px 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--secondary-text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .header-link::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        transform: scaleX(0);
+        background: #404bbf;
+        border-radius: 2px;
+        display: block;
+        margin-top: 20px;
+        bottom: -1px;
+      
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .header-link:hover:after,
+      .header-link:focus:after,
+      .header-link.current::after {
+        transform: scaleX(1);
+      }
+      
+      .header-contact .header-contact-link:hover,
+      .header-contact .header-contact-link:focus {
+        color: var(--primare-hover-color);
+      }
+      .header-contact {
+        font-style: normal;
+      }
+      .header-contact-link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--primary-text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
     /*--------------------- HERO-------------------------------------*/
     .hero-title{
         width: 496px;
@@ -77,7 +164,7 @@
     .container{
         max-width: 1158px;
     }
-    
+    /*--------------------- HERO-------------------------------------*/
     .hero{
         padding-top: 188px;
         padding-bottom: 188px;
@@ -89,7 +176,7 @@
         line-height: 1.07;
         margin-bottom: 48px;
     }
-     
+     /* -------------------SECTION PROGRAM-------------------------------*/
       .program-icon-container{
         display: flex;
         align-items: center;
@@ -117,12 +204,12 @@
         height: 72px;
     }
     
-
+/* ---------------------SECTION ІNSTRUCTION--------------------------*/
     .instruction{
         display: flex;
         padding: 120px 0;
     }
-   
+   /* --------------------SECTION TEAM------------------------------------*/
     .team{
         padding-top: 120px;
         padding-bottom: 120px;
