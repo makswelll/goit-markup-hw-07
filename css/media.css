@@ -30,11 +30,7 @@
         gap: 40px;
         padding: 24px 0;
       }
-      .header-contact {
-        display: flex;
-        margin-left: auto;
-        gap: 40px;
-      }
+
       .header-logo {
         margin-right: 76px;
         font-family: "Raleway", sans-serif;
@@ -109,6 +105,24 @@
         color: var(--primary-text-color);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
+      .mobile-menu-btn{
+        display: none;
+      }
+      .header-contact{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        gap: 12px;
+      }
+      .header-contact-link{
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+
+      }
+
+
+
     /*--------------------- HERO-------------------------------------*/
     .hero-title{
         width: 496px;
@@ -156,6 +170,60 @@
         column-gap: 24px;
         row-gap: 64px;
     }
+    /* --------------------------CUSTOMERS---------------------------------*/
+    .customers> .container{
+        padding: 0 108px;
+    }
+    .customers-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+      }
+    .customers-item {
+        width: calc((100% - 48px) / 3);
+        height: 88px;
+      }
+      /* ------------------------------FOOTER----------------------------------*/
+.footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    padding: 0 108px;
+}
+.footer-logo-text{
+  padding: 0;
+  justify-content: flex-start;
+}
+.footer-logo{
+  justify-content: flex-start;
+}
+.footer-text{
+  margin-bottom: 0;
+}
+
+.sub-input{
+  width: 264px
+}
+.footer-soc-title{
+  justify-content: flex-start;
+}
+.footer-soc{
+  margin-bottom: 0;
+  padding: 0;
+}
+.sub-form {
+  display: flex;
+  gap: 16px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
 }
 
 
@@ -164,6 +232,30 @@
     .container{
         max-width: 1158px;
     }
+
+/* --------------------------------------------HEADER ----------------------------------------------------*/
+
+.header-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    
+  }
+  
+  .header-contact-link{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .header-contact-link{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+  }
+
+
+
     /*--------------------- HERO-------------------------------------*/
     .hero{
         padding-top: 188px;
@@ -186,6 +278,27 @@
         border-radius: 4px;
         margin-bottom: 8px;
     }
+    .program-icon-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+      }
+      .program-icon-item {
+        width: 264px;
+        height: 112px;
+        background: #f4f4fd;
+        border-radius: 4px;
+      }
+      .program-icon-link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .program-icon {
+        display: flex;
+      }
     .program{
         padding: 120px 0;
     }
@@ -205,10 +318,27 @@
     }
     
 /* ---------------------SECTION ІNSTRUCTION--------------------------*/
-    .instruction{
+      .instruction{
         display: flex;
         padding: 120px 0;
     }
+      .instruction-title {
+        margin-bottom: 72px;
+        text-transform: capitalize;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+      }
+      
+      .instruction-picture {
+        width: calc((100% - 48px) / 3);
+      }
+      
+      .instruction-list {
+        display: flex;
+        gap: 24px;
+      }
    /* --------------------SECTION TEAM------------------------------------*/
     .team{
         padding-top: 120px;
@@ -225,5 +355,28 @@
     .team-item{
         width: calc((100% - 72px) / 4);
     }
-
+    /* --------------------------CUSTOMERS----------------------------*/
+    .customers> .container{
+        padding: 0 15px;
+    }
+    .customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+      }
+      .customers-list {
+        display: flex;
+        gap: 24px;
+      }
+      .customers-item {
+        width: calc((100% - 120px) / 6);
+        height: 88px;
+      }
+      /* ------------------------------FOOTER----------------------------------*/
+      .footer{
+        padding: 0 15px;
+        justify-content: space-between;
+        width: 1128px;
+        background: #2e2f42;
+      }
+      
   }    
