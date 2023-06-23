@@ -265,12 +265,23 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/mob-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/mob-bg-2x.jpg);
+  }
 }
 
 .hero-title {
@@ -429,8 +440,7 @@ img {
   padding-top: 96px;
   padding-bottom: 96px;
 }
-.customers-container {
-}
+
 .customers-title {
   font-size: 36px;
   line-height: 1.11;
@@ -664,8 +674,7 @@ img {
   gap: 24px;
 }
 
-.projects-item {
-}
+
 .projects-btn:hover {
   color: #ffffff;
   background-color: #404bbf;
@@ -704,8 +713,6 @@ img {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* -------------------------------------------------------PORTFOLIO EXAMPLES--------------------------------------------------------*/
-.projects-container {
-}
 
 .examples-list {
   display: flex;
@@ -733,8 +740,7 @@ img {
 .examples-title {
   margin-bottom: 8px;
 }
-.examples-text {
-}
+
 .examples-img-wrapper {
   position: relative;
   overflow: hidden;
