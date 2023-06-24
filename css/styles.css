@@ -222,9 +222,7 @@ img {
 }
 .mob-soc-list {
   display: flex;
-  gap: 16px;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .mob-soc-item {
   width: 40px;
@@ -285,8 +283,7 @@ img {
 }
 
 .hero-title {
-  width: 320px;
-  height: 80px;
+  max-width: 320px;
   margin: 0 auto;
   font-size: 36px;
   line-height: 1.11;
@@ -374,6 +371,8 @@ img {
 }
 
 .team-title {
+  font-weight: 700;
+  
   margin-bottom: 72px;
   text-transform: capitalize;
   font-size: 36px;
@@ -492,11 +491,11 @@ img {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .footer-logo-text {
-  padding: 0 65px;
-  text-align: center;
-  
+  margin-bottom: 72px;
+
 }
 
 .footer-logo {
@@ -527,44 +526,36 @@ img {
 }
 
 .footer-text {
-  max-width: 268px;
-  height: 72px;
+  max-width: 264px;
+  margin: 0 auto;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  text-align: left;
-  margin-bottom: 72px;
 }
 
 .footer-soc {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0 95px;
+  flex-wrap: wrap;
+  min-width: 208px;
   margin-bottom: 72px;
 }
 .footer-soc-title {
   display: flex;
-  width: 100%;
-    align-items: center;
-    justify-content: center;
-
-  font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
-  
+  align-items: center;
+  justify-content: center;
 }
 .footer-list {
   display: flex;
-  justify-content: center;
-  gap: 16px;
+    gap: 16px;
+    align-items: center;
+    justify-content: center
 }
 .footer-item {
   width: 40px;
@@ -978,3 +969,13 @@ img {
 .modal-send-btn:focus {
   background-color: #404bbf;
 }
+@media screen and (max-width: 427px) {
+  .modal{
+    width: 95%;
+  }
+  .tel-mob-address-link{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  }

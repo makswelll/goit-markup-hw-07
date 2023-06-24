@@ -23,6 +23,7 @@
         max-width: 768px;
     }
 
+
     /* --------------------------------------------HEADER ----------------------------------------------------*/
     .header-list {
         display: flex;
@@ -125,8 +126,7 @@
 
     /*--------------------- HERO-------------------------------------*/
     .hero-title{
-        width: 496px;
-        height: 120px;
+        max-width: 496px;
         font-size: 56px;
         line-height: 1.07;
         margin-bottom: 36px;
@@ -191,6 +191,9 @@
         column-gap: 24px;
         row-gap: 64px;
     }
+    .team-title{
+      font-weight: 700;
+    }
     /* --------------------------CUSTOMERS---------------------------------*/
     .customers> .container{
         padding: 0 108px;
@@ -216,9 +219,12 @@
     column-gap: 24px;
     row-gap: 72px;
     padding: 0 108px;
+    justify-content: flex-start;
+}
 }
 .footer-logo-text{
   padding: 0;
+  margin: 0;
   justify-content: flex-start;
 }
 .footer-logo{
@@ -245,7 +251,7 @@
   flex-direction: row;
 }
 
-}
+
 
 
 
@@ -306,13 +312,17 @@
   }
 }
     .hero-title{
-        width: 496px;
-        height: 120px;
+        max-width: 496px;
         font-size: 56px;
         line-height: 1.07;
         margin-bottom: 48px;
     }
      /* -------------------SECTION PROGRAM-------------------------------*/
+
+
+     .program-container{
+      display: flex;
+     }
       .program-icon-container{
         display: flex;
         align-items: center;
@@ -395,6 +405,9 @@
     .team-list {
         display: flex;
         gap: 24px;
+    }
+    .team-title{
+      font-weight: 700;
     }
     .team-item{
         width: calc((100% - 72px) / 4);
