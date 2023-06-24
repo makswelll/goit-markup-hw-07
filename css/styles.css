@@ -40,7 +40,7 @@ img {
 }
 /*------------------------------------------------------- службові класи---------------------------------------------- */
 .container {
-  width: 100%;
+  max-width: 426px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -579,9 +579,8 @@ img {
   fill: #f4f4fd;
 }
 .sub-container{
-  max-width: 398px;
+  width: 100%;
 }
-
 .sub-form {
   display: flex;
   gap: 16px;

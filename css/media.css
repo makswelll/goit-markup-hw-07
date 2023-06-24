@@ -165,14 +165,13 @@
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
-        
+
       }
-    .program-item{
+    .program-item {
         width: calc((100% - 24px) / 2);
-        height: 120px;
         margin-bottom: 0;
     }
-    .program-title{
+    .program-title {
         text-align: start;
         margin-bottom: 8px;
     }
@@ -222,7 +221,7 @@
     padding: 0 108px;
     justify-content: flex-start;
 }
-}
+
 .footer-logo-text{
   padding: 0;
   margin: 0;
@@ -231,8 +230,12 @@
 .footer-logo{
   justify-content: flex-start;
 }
+
 .footer-text{
   margin-bottom: 0;
+}
+.sub-label{
+  width: 264px;
 }
 
 .sub-input{
@@ -252,6 +255,7 @@
   flex-direction: row;
 }
 
+}
 
 
 
@@ -375,7 +379,7 @@
 /* ---------------------SECTION ІNSTRUCTION--------------------------*/
       .instruction{
         display: flex;
-        padding: 120px 0;
+        padding-bottom: 120px;
     }
       .instruction-title {
         margin-bottom: 72px;
@@ -437,6 +441,8 @@
     }
      .footer-container {
   display: flex;
+  flex-wrap: nowrap;
+  column-gap: 24px;
   align-items: baseline;
   padding: 0 15px;
   column-gap: 0;
@@ -454,6 +460,9 @@
   width: 208px;
   height: 80px;
   margin-right: 80px;
+}
+.sub-container{
+  width: 453px;
 }
     .sub-form {
   display: flex;
