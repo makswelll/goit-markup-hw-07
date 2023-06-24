@@ -579,7 +579,7 @@ img {
   fill: #f4f4fd;
 }
 .sub-container{
-  width: 398px;
+  max-width: 398px;
 }
 
 .sub-form {
